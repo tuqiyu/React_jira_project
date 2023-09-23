@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 import logo from '../../../static/logo192.png'
 
 function Header() {
-  const navigate = useNavigate()
+  const navigate = useNavigate()//
 
   async function logout() {
     await axios.post('/api/logout')
