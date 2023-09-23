@@ -2,7 +2,7 @@ import ProjectPopover from "./projectPopover"
 import UserPopover from "./userPopober"
 import axios from "../../../util/http"
 import { useNavigate } from "react-router-dom"
-import logo from '../../../static/logo.png'
+import logo from '../../../static/logo192.png'
 
 function Header() {
   const navigate = useNavigate()
@@ -20,7 +20,7 @@ function Header() {
     <div className='header_wrap_body'>
       <button className='header_button' onClick={home_click}>
         <img className="header_logo" src={logo}></img>
-        <h2 >九剑scrum项目管理系统</h2>
+        <h2 >Jira</h2>
       </button>
       <ProjectPopover />
       <UserPopover />
