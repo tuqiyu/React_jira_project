@@ -9,7 +9,7 @@ const smp = new SpeedMeasurePlugin();
 // 分析打包产物
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-const config = {
+const config = smp.wrap({
     entry: "./src/index",
     output: {
         filename: "[name].js",
@@ -65,6 +65,6 @@ const config = {
             type: 'asset',
         },],
     },
-};
+});
 
 module.exports = config
