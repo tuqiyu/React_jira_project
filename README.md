@@ -4,7 +4,7 @@
 
 ##### 使用Redux Toolkit 中间件管理项目复杂数据流。 
 
-
+##### 使用react-beautiful-dnd库实现看板拖拽功能。
 
 优化尚未完成...
 
