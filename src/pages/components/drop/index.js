@@ -161,5 +161,5 @@ function DropCp(props) {
 }
 
 
-const DropCpMemo = React.memo(DropCp)
+const DropCpMemo = React.memo(DropCp) //父子组件渲染问题
 export default DropCpMemo;
