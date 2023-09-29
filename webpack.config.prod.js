@@ -1,7 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 //性能分析工具
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 const smp = new SpeedMeasurePlugin();
@@ -26,7 +26,8 @@ const config = smp.wrap({
             template: './public/index.html'
         }),
         new MiniCssExtractPlugin(),
-        new BundleAnalyzerPlugin()
+        new BundleAnalyzerPlugin(),
+        new CleanWebpackPlugin()
     ],
 
     performance: {
