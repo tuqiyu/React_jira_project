@@ -1,7 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+const WebpackBar = require('webpackbar')
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 const smp = new SpeedMeasurePlugin();
 const config = {
@@ -20,7 +20,8 @@ const config = {
         new HtmlWebpackPlugin({
             template: './public/index.html'
         }),
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin(),
+        new WebpackBar()
     ],
     devServer: {
         static: {
