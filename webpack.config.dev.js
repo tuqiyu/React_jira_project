@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackBar = require('webpackbar')
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
-const smp = new SpeedMeasurePlugin();
+const smp = new SpeedMeasurePlugin();   //加上虽然可以分析，但是会报错，并且dist文件不会生成
 const config = {
     entry: "./src/index",
     output: {
