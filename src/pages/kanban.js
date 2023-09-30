@@ -73,7 +73,7 @@ function Kanban() {
     }, [params.id])
 
     return (
-        <div className='kanban_body'>
+        <div class="flex flex-col w-full h-full p-8">
             <div className='Kanban_title'>
                 <h1>{current_project.name}-研发看板</h1>
             </div>
