@@ -1,4 +1,4 @@
-## Scrum任务管理系统 web端
+## jira任务管理系统 web端
 
 技术栈：React、Router、Redux、Hooks、Ant-design、Webpack.
 
